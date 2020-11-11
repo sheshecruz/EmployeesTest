@@ -1,0 +1,40 @@
+﻿@model List<MVCWebApp.Models.EmployeeViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="employee-list-title">Employees</div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <input type="number" value="" id="inputSearchText" placeholder="Ingrese id del empleado" />
+        <input type="button" id="btnSearch" class="btn btn-primary" value="Get Employees" onclick="searchEmployeesById()"/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12" id="employeeTable">
+        @{
+            Html.RenderPartial("~/Views/Shared/_EmployeeTable.cshtml");
+        }
+    </div>
+</div>
+
+<script type="text/javascript">
+    function searchEmployeesById() {
+        var employeeId = document.getElementById('inputSearchText').value;
+        $.ajax({
+            type: "POST",
+            data: { searchText: employeeId },
+            url: '@Url.Action("Search", "Home")',
+            async: true,
+            success: function (result) {
+                $("#employeeTable").html(result);
+            }
+        });
+    }
+</script>

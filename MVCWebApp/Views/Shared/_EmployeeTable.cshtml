@@ -1,0 +1,38 @@
+﻿@model List<MVCWebApp.Models.EmployeeViewModel>
+@{ 
+        Layout = null;
+}
+
+@{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Contract Type</th>
+                <th scope="col">Role Id</th>
+                <th scope="col">Role Name</th>
+                <th scope="col">Role Description</th>
+                <th scope="col">Hourly Salary</th>
+                <th scope="col">Monthly Salary</th>
+                <th scope="col">Annual Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (MVCWebApp.Models.EmployeeViewModel employee in Model)
+            {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.Name</td>
+                <td>@employee.ContractTypeName</td>
+                <td>@employee.RoleId</td>
+                <td>@employee.RoleName</td>
+                <td>@employee.RoleDescription</td>
+                <td>@employee.HourlySalary</td>
+                <td>@employee.MonthlySalary</td>
+                <td>@employee.AnnualSalary</td>
+            </tr>
+            }
+            </tbody>
+    </table>
+}

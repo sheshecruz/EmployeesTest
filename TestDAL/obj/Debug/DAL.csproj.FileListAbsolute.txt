@@ -1,0 +1,11 @@
+C:\Fuentes\Moovx_Test\TestDAL\bin\Debug\Newtonsoft.Json.dll
+C:\Fuentes\Moovx_Test\TestDAL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Fuentes\Moovx_Test\TestDAL\bin\Debug\Newtonsoft.Json.xml
+C:\Fuentes\Moovx_Test\TestDAL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Fuentes\Moovx_Test\TestDAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Fuentes\Moovx_Test\TestDAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Fuentes\Moovx_Test\TestDAL\bin\Debug\DAL.dll
+C:\Fuentes\Moovx_Test\TestDAL\bin\Debug\DAL.pdb
+C:\Fuentes\Moovx_Test\TestDAL\obj\Debug\DAL.dll
+C:\Fuentes\Moovx_Test\TestDAL\obj\Debug\DAL.pdb
+C:\Fuentes\Moovx_Test\TestDAL\obj\Debug\DAL.csprojAssemblyReference.cache
